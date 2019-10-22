@@ -14,8 +14,4 @@ class SessionsController < ApplicationController
   def destroy
     session.delete :name
   end
-
-  def logged_in?
-    !session[:name].blank?
-  end
 end
